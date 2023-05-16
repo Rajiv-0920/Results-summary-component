@@ -1,0 +1,158 @@
+@font-face {
+  font-family: myFont;
+  src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 15px 20px 0px hsl(221, 100%, 96%);
+  border-radius: 40px;
+  display: flex;
+  width: 700px;
+}
+.container .result {
+  width: 50%;
+  padding: 2.5rem 1rem;
+  border-radius: 40px;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  text-align: center;
+  font-family: myFont;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .result h5 {
+  font-size: 1.6rem;
+  color: lightgray;
+  margin: 0 0 1rem 0;
+}
+.container .result h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 20px 0;
+}
+.container .result p {
+  color: lightgray;
+  font-size: 1.1rem;
+  padding: 0 30px 10px;
+}
+.container .result .marks {
+  height: 200px;
+  width: 200px;
+  margin: 1rem 0;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .result .marks h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+.container .result .marks h6 {
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%, 0.3);
+}
+.container .summary {
+  width: 50%;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  flex-grow: 1;
+  justify-content: space-around;
+  font-family: myFont;
+  display: flex;
+  flex-direction: column;
+}
+.container .summary h2 {
+  color: hsl(224, 30%, 27%);
+}
+.container .summary .box {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+}
+.container .summary .box .point {
+  margin-left: auto;
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+.container .summary .box .point span {
+  margin-left: auto;
+  color: hsla(224, 30%, 27%, 0.495);
+  font-weight: 700;
+}
+.container .summary .reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.container .summary .memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.container .summary .verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.container .summary .visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.container .summary .btn {
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .container .result {
+    width: 100%;
+    padding-top: 5rem;
+  }
+  .container .summary {
+    width: 100%;
+  }
+  .container .summary h2 {
+    padding: 2rem 0;
+  }
+  .btn {
+    margin: 1rem 0;
+  }
+}
